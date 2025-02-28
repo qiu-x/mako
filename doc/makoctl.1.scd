@@ -20,10 +20,13 @@ Sends IPC commands to the running mako daemon via dbus.
 	Options:
 
 	*-a, --all*
-		Dismiss all notifications.
+		Dismiss all notifications (incompatible with *--group*).
 
 	*-g, --group*
 		Dismiss the first notification group.
+
+	*-h, --no-history*
+		Dismiss the current notification without adding it to history.
 
 	*-n* <id>
 		Dismiss the notification with the given id. Defaults to the first
